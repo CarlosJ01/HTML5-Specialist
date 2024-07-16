@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Displaying Data in Tables and iFrames</title>
+</head>
+<body>
+<!--    Tables (Filas y Columnas)-->
+    <table>
+<!--       Caption o titulo de la tabla-->
+        <caption>Title</caption>
+<!--      Header and Body-->
+       <theader>
+           <tr>
+               <th>Song</th><th>Artist</th> <th>Rating</th>
+           </tr>
+       </theader>
+       <tbody>
+            <tr>
+                <td>Faihfully</td><td>Journey</td><td>*****</td>
+            </tr>
+            <tr>
+                <td>Faihfully</td><td>Journey</td><td>*****</td>
+            </tr>
+<!--            Tomar varias filas por una celda-->
+            <tr>
+                <td>Faihfully</td><td rowspan="2">Journey</td><td>***</td>
+            </tr>
+            <tr><td>sdfsda</td><td>sasa</td></tr>
+       </tbody>
+    </table>
+    
+<!--    Border and width in tables -->
+    <style>
+        
+        table {
+            width: 100%
+        }
+        table, tr, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: black;
+            color: white;
+        }
+        caption{
+            color: red;
+            font-weight: bold;
+            font-size: 100px;
+        }
+    </style>
+    
+    <hr>
+<!--    iFrames paginas dentro de otras-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FURvcUSo5FQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<!--   Form -->
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="bio">Biography</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        
+<!--        Campo requerido -->
+        <input type="text" required>
+<!--        Max de longitud y autocompletar -->
+        <input type="text" maxlength="25" autocomplete="off">
+        
+<!--        Varia seleccion otro select -->
+        <input type="text" placeholder="Lenguages Programing" list="lenguajes">
+        <datalist id="lenguajes">
+            <option value="js">JS</option>
+            <option value="java">JAVA</option>
+            <option value="php">PHP</option>
+        </datalist>
+        
+        <hr>
+        <input type="checkbox" name="a" value="js">JS
+        <input type="checkbox" name="a" value="java">Java
+        <input type="checkbox" name="a" value="php">PHP
+        
+        <hr>
+        <input type="radio" name="b" value="m" checked>Male
+        <input type="radio" name="b" value="f" checked>Female
+        <input type="radio" name="b" value="o" checked>Other
+        
+        <hr>
+        <select name="pais" id="pais">
+            <option value="mx">Mexico</option>
+            <option value="usa">USA</option>
+        </select>
+        
+<!--        Submit Form -->
+       <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+       
+       <hr>
+       <button id="btn" onclick="alert()">Button</button>
+       
+       
+<!--       Date inputs -->
+       <hr>
+       <input type="date" id="birthday">
+       <input type="time" id="birthtime"> 
+       
+<!--       Numerical -->
+       <input type="number" min="0" max="100">
+       
+<!--       Organazing -->
+      <hr>
+       <fieldset>
+           <legend>Personal Information</legend>
+            <label for="firstname">FirstName: </label>
+            <input type="text" name="firstname">
+       </fieldset>
+    </form>
+</body>
+</html>
